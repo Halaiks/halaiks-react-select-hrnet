@@ -25,7 +25,7 @@
       "import": "./dist/react-custom-select.js",
       "require": "./dist/react-custom-select.cjs"
     },
-    "./style.css": "./dist/react-custom-select-halaiks.css"
+    "./style.css": "./dist/halaiks-react-select.css"
   },
   "files": [
     "dist"
