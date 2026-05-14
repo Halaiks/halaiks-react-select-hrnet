@@ -1,7 +1,7 @@
 {
   "name": "halaiks-react-select",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Custom React Select component with keyboard navigation and search support",
   "keywords": [
     "react",
