@@ -1,7 +1,7 @@
 {
   "name": "halaiks-react-select",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom React Select component with keyboard navigation and search support",
   "keywords": [
     "react",
@@ -12,19 +12,14 @@
   ],
   "author": "Alexandre GUILLAUME",
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/Halaiks/react-custom-select-halaiks.git"
   },
-
   "homepage": "https://github.com/Halaiks/react-custom-select-halaiks",
-
   "type": "module",
-
   "main": "./dist/react-custom-select.cjs",
   "module": "./dist/react-custom-select.js",
-
   "exports": {
     ".": {
       "import": "./dist/react-custom-select.js",
@@ -32,16 +27,16 @@
     },
     "./style.css": "./dist/react-custom-select-halaiks.css"
   },
-
-  "files": ["dist"],
-
-  "sideEffects": ["**/*.css"],
-
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch"
   },
-
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
