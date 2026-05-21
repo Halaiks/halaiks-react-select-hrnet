@@ -12,12 +12,13 @@ import "./Select.css"
  */
 
 function Select({ label, options, value, onChange, placeholder }) {
-
+  // État d'ouverture de la liste déroulante
   const [isOpen, setIsOpen] = useState(false)
-
+  // Index de l'option actuellement mise en surbrillance pour la navigation clavier
   const [highlightedIndex, setHighlightedIndex] = useState(0)
-
+  // Référence sur le conteneur global pour détecter les clics extérieurs
   const selectRef = useRef(null)
+  // Références sur chaque option pour le scroll automatique
   const optionRefs = useRef([])
 
   // Scroll l'option mise en surbrillance dans la vue lorsque la liste est ouverte
@@ -47,7 +48,7 @@ function Select({ label, options, value, onChange, placeholder }) {
       document.removeEventListener("mousedown", handleClickOutside)
     }
   }, [])
-
+// Sélectionne une option et ferme le menu
   const handleSelect = useCallback((option) => {
     onChange(option)
     setIsOpen(false)
